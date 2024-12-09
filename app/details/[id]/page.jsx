@@ -40,19 +40,14 @@ export default function Details() {
           </div>
 
           <div className="rounded-lg shadow-md" style={{ width: 500 }}>
-            <div className="flex flex-col items-center justify-center">
+            <div>
               {details?.image && (
                 <div style={{ backgroundColor: "#60e2c9" }}>
-                  <Image
-                    src={details?.image}
-                    alt={details?.name}
-                    width={500}
-                    height={100}
-                  />
+                  <img src={details?.image} alt={details?.name}  className="w-full h-full object-cover"/>
                 </div>
               )}
             </div>
-            <div className="bg-yellow-400 p-4  shadow-md">
+            <div className="bg-yellow-400 p-4  shadow-md" >
               <h2 className="text-xl flex justify-left">
                 <div className="font-bold mr-2">Name: </div>{" "}
                 <div>{details?.name}</div>

@@ -141,12 +141,7 @@ export default function Home() {
             
             <div key={pokemon.name + index} className="max-w-sm rounded overflow-hidden shadow-lg">
                <div className='flex justify-center'>
-               <Image
-                src={pokemon.image}
-                alt={pokemon.name}
-                width={200}
-                height={200}
-              />
+               <img src={pokemon.image} alt={pokemon.name} className="w-32 h-32 mx-auto" />
               </div>
             <div className='bg-gray-100'>
             <div className="px-6 py-4">
